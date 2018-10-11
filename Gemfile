@@ -8,6 +8,11 @@ gem 'devise'
 gem 'doorkeeper', '~> 4.0'
 gem 'faker'
 
+gem 'pry-byebug'
+gem 'pry-rails'
+gem 'better_errors'
+gem 'binding_of_caller'
+
 gem 'coderay'
 gem 'redcarpet'
 
