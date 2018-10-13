@@ -6,6 +6,8 @@ Doorkeeper.configure do
     # If you want to use named routes from your app you need
     # to call them on routes object eg.
     # routes.new_user_session_path
+    session[:previous_url] = request.fullpath
+
     request.env['warden'].user ||
       User.where(email: request.params[:username]).first ||
       redirect_to(routes.new_user_session_path)
